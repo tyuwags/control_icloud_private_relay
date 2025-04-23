@@ -67,13 +67,9 @@ Each run will:
 ## Customization
 
 - **Delays**  
-  The script uses `sleep` (in shell) and `delay` (in AppleScript) to allow the UI time to render. If your Mac is particularly slow or fast, tweak these values:
+  The script `delay` (in AppleScript) to allow the UI time to render. If your Mac is particularly slow or fast, tweak these values:
 
   ```diff
-  # In the shell portion
-  - sleep 10
-  + sleep 8      # shorten wait
-  
   # In the AppleScript portion (example)
   - delay 2
   + delay 3      # lengthen each UI delay
